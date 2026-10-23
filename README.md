@@ -34,3 +34,38 @@ Six classifiers were evaluated:
 
 These are preliminary results from a small dataset. Performance should not be interpreted as evidence of clinical reliability.
 
+## Running the Web App
+
+This project includes a Streamlit web app that uses the
+saved machine-learning pipeline to predict a drug class
+from the entered features.
+
+### Requirements
+- Python 3
+- Dependencies listed in `requirements.txt`
+
+### Setup
+
+Create a virtual environment:
+
+`python3 -m venv .venv`
+
+Activate it on macOS or Linux:
+
+`source .venv/bin/activate`
+
+Install the dependencies:
+
+`python -m pip install -r requirements.txt`
+
+### Run the app
+
+`streamlit run app.py`
+
+Open the local URL shown in the terminal.
+
+### Disclaimer
+
+This application is for academic demonstration only.
+Its predictions are not medical advice and must not be
+used to select or prescribe medication.
