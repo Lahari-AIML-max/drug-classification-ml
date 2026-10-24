@@ -34,6 +34,16 @@ Six classifiers were evaluated:
 
 These are preliminary results from a small dataset. Performance should not be interpreted as evidence of clinical reliability.
 
+## Why Random Forest Was Selected
+
+Random Forest was selected as our initial final model because it achieved strong performance on the held-out test set, with 97.5% accuracy and a macro F1-score of 0.9418. It supports multiclass classification and can learn complex, nonlinear relationships between patient attributes and drug classes.
+
+Hyperparameter tuning was performed using stratified cross-validation. The selected model achieved a cross-validation macro F1-score of 1.0000 in the tested folds. The complete preprocessing and Random Forest pipeline was saved for integration into the Streamlit application.
+
+LightGBM achieved a slightly higher macro F1-score in the preliminary baseline comparison. Therefore, Random Forest is our selected candidate based on the current experiments, not a proven universal winner. Further consistent validation is required because the Drug200 dataset contains only 200 records.
+
+This project is intended for academic demonstration only and must not be used to make medical or prescribing decisions.
+
 ## Running the Web App
 
 This project includes a Streamlit web app that uses the
